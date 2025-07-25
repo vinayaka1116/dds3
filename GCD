@@ -1,0 +1,10 @@
+#include <iostream>
+#include <numeric> // Required for std::gcd
+
+int main() {
+    int a = 56;
+    int b = 98;
+    int gcd_value = std::gcd(a, b);
+    std::cout << "GCD of " << a << " and " << b << " is: " << gcd_value << std::endl;
+    return 0;
+}
