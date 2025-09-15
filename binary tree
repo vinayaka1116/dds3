@@ -22,7 +22,7 @@ struct Node{
 void  inorder(Node*root){
     if (root){
         inorder(root->left);
-        cout<<root->data;
+        cout<<root->data<<" ";
         inorder(root->right);
     }
 }
@@ -36,4 +36,6 @@ int main(){
     }
     Node*root=nullptr;
     root=insert(root,arr,0,n);
+     cout<<endl;
+    inorder(root);
 }
